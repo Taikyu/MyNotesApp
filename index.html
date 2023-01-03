@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MY NOTES</title>
+  </head>
+  <body>
+    <!-- contains the main note app -->
+    <div class="container">
+      <button class="add" id="add"><i class="fas fa-plus"></i> Add note</button>
+      <button class="clear" id="clear">
+        Clear notes <i class="fas fa-trash"></i>
+      </button>
+
+    </div>
+
+    <!-- prompt display to confirm erasure of all saved notes -->
+    <div class="blur hidden"></div>
+    <div class="prompt hidden">
+        <i class="fas fa-exclamation-triangle"></i>
+        <p>Are you sure you want to delete all saved notes?</p>
+        <div class="confirm-delete">
+            <button class="hide">No, go back</button>
+            <button class="reset">Yes, delete</button>
+        </div>
+    </div> 
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
+

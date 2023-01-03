@@ -1,0 +1,165 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    background-image: url("images/Paper.jpeg");
+    background-size: cover;
+}
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    cursor: pointer;
+}
+
+
+.container{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+.add{
+    position: fixed;
+    top: 1rem;
+    right: 9rem;
+    background-color: #9ec862;
+    color: whitesmoke;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+.clear{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #c86262;
+    color: whitesmoke;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+
+
+.note{
+    margin: 15px 15px 30px 15px;
+    height: 300px;
+    width: 300px;
+}
+.tools{
+    background-color: #9ec862;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+.tools button {
+    background-color: transparent;
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: whitesmoke;
+}
+.note .display, textarea {
+    height: 300px;
+    width:300px;
+    padding: .5rem;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+}
+.display{
+    background-color: whitesmoke;
+}
+
+
+
+
+/* delete prompt that blurs the background */
+.prompt{
+    /* add font family  */
+    position: fixed;
+    text-align: center;
+    width: 80vw;
+    height: 30vh;
+    left: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #9ec862;
+    border-radius: 20px;
+    border: 1px  #c86262 dotted;
+}
+.prompt i {
+    position: relative;
+    top: 20%;
+    color: #c86262;
+}
+.prompt p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+.prompt .confirm-delete{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.reset{
+    background-color: #c86262;
+    color: whitesmoke;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+.hide{
+    background-color: whitesmoke;
+    color: #88ae53;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+.blur{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* ----------------------for mobile screens------------------------ */
+
+@media screen and (max-width:450px){
+    .note .display, textarea {
+        height: 40vh;
+        width: 80vw;
+    }
+    .note{
+        height: 40vh;
+        width: 80vw;
+    }
+    .reset,.hide{
+        border-radius: 10px;
+        padding: none;
+        font-size: .55rem;
+    }
+}
